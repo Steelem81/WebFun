@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-container {
+    width: 60vw;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    padding: 10px 30px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar {
+    padding: 5px;
+    border: 2px solid black;
+    width: 500px;
+}
+.login{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+
+}
+
+.col-2{
+    flex: 2;
+}
+
+.col {
+    flex: 1;
+}
+
+.card {
+    padding: 10px;
+    border: 2px solid grey;
+    display: flex;
+    margin: 20px;
+}
+
+.semantics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.pos {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.definition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+
+.semantics > p {
+    margin: 5px;
+
+}
+
+.likes {
+    background-color: goldenrod;
+    padding: 5px;
+    color: white;
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+}
+
+.card-add-def {
+    flex-direction: column;
+}
+
+.add-def {
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    background-color: seagreen;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+}

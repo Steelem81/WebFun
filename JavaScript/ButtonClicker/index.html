@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtonClicker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="top-container">
+        <div class="nav">
+            <h1>Dojonary</h1>
+            <input type="text" placeholder="search" class="searchbar">
+            <btn class="login" onclick="login(this)">Log In</btn>
+        </div>
+        <div class="container">
+            <div class="col-2">
+                <div class="card">
+                    <div class="semantics">
+                        <h2>ninja</h2>
+                        <p class="pos">noun</p>
+                        <p>Plural: ninjas</p>
+                        <btn class="likes" onclick="alert('Ninja was liked')">13 Likes</btn>
+                    </div>
+                    <div class="definition">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="semantics">
+                        <h2>ninja</h2>
+                        <p class="pos">noun</p>
+                        <p>Plural: ninjas</p>
+                        <btn class="likes" onclick="alert('Ninja was liked')">37 Likes</btn>
+                    </div>
+                    <div class="definition">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-add-def">
+                    <p>Dojonary is defined by <b>You</b></p>
+                    <btn class="add-def" onclick="remove(this)">Add Definition</btn>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
