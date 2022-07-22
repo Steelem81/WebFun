@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Making Connections</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./main.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="nav">
+            <div class="nav-title">
+                <h1>Profile</h1>
+            </div>
+            <ul class="nav-links">
+                <!-- <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button type="button" id="login-button">Sign Out</button></li> -->
+                <li>Home</li>
+                <li class="active">My Profile</li>
+                <li>Find Connections</li>
+                <li><button type="button" id="login-button">Sign Out</button></li>
+            </ul>
+        </div>
+
+        <!---Feed-->
+        <div class="feed">
+            <div class="row">
+            <!-- Big Column-->
+                <div class="col col-1">
+
+                    <!-- Profile -->
+                    <div class="card" id="profile">
+                        <div  id="profile-header">
+                            <img src="../../icons/user-circle.png" id="profile-icon" alt="user-pic"/>
+                        </div>
+                        <div class="card-body">
+                            <h1 id="profile-name">Jane Doe</h1>
+                            <h3>
+                                <img src="../../icons/map-marker.png" alt="map marker" class="icon-small"/>
+                                Seattle
+                            </h3>
+        
+                            <p>Develper | Engineer | Problem Solver</p>
+                            <p>Master of shadows and the Internet!</p>
+                            <p>
+                                <img src="../../icons/gear.png" alt="gear" class="icon-small"/>
+                                <a href="#" id="edit-profile-link">edit profile</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Education</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Coding Dojo - Full Stack Bootcamp</p>
+                            <p class = "dates">Dec 2019 - Mar 2020</p>
+                            <p>Triple black belt in Python, MERN and C#</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SMALL COLUMN -->
+                <div class="col col-2">
+                    <div class="card" id = "connections-req-card">
+                        <div class="card-header">
+                            <span class="connections" id="connection-requests">#</span>    
+                            Connection Requests
+                        </div>
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="../../icons/user-circle.png" alt="todd" class="icon-small">
+                                <span>Todd E</span>
+                            </span>
+                            <span class="end">
+                                <img src="../../icons/accept-circle.png" alt="accept" class="icon-small accept-circle">
+                                <img src="../../icons/close-circle.png" alt="close" class="icon-small reject-circle">
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="../../icons/user-circle.png" alt="phil" class="icon-small">
+                                <span>Phil K</span>
+                            </span>
+                            <span class="end">
+                                <img src="../../icons/accept-circle.png" alt="accept" class="icon-small accept-circle">
+                                <img src="../../icons/close-circle.png" alt="close" class="icon-small reject-circle">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card" id="connections-card">
+                        <div class="card-header">
+                                <span class="connections" id="connections-count">418</span>
+                                Your Connections
+                        </div>
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="../../icons/user-circle.png" alt="user-circle" class="icon-small">
+                                <span>Adrien D</span>
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="../../icons/user-circle.png" alt="user-circle" class="icon-small">
+                                <span>Anne J</span>
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="../../icons/user-circle.png" alt="user-circle" class="icon-small">
+                                <span>Alayne T</span>
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="../../icons/user-circle.png" alt="user-circle" class="icon-small">
+                                <span>Arry Y</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
