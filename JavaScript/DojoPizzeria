@@ -1,0 +1,55 @@
+var possCheeses = ['mozarella', 'feta', 'parm', 'cheddar']
+var possCrusts = ['deep dish', 'hand tossed', 'thin crust']
+var possSauce = ['traditional', 'marinara', 'pesto', 'white']
+var possToppings = ['mushrooms', 'pepperoni', 'sausage', 'peppers', 'basil', 'garlic cloves', 'anchovies', 'bacon']
+
+function pizzaOven(crust, sauce, cheese, topping){
+
+
+var pizza = {}
+
+if (typeof crust == 'undefined'){
+    pizza.crustType = possCrusts[Math.floor(Math.random() * possCrusts.length)]
+} else {
+    pizza.crustType= crust
+}
+
+if (typeof sauce == 'undefined'){
+    pizza.sauceType = possSauce[Math.floor(Math.random()*possSauce.length)]
+    console.log(Math.floor(Math.random()* possSauce.length))
+} else {
+    pizza.sauceType= sauce
+}
+
+
+if (typeof cheese == 'undefined') {
+    var howMany = Math.floor(Math.random() * possCheeses.length)
+    var cheeseArr = []
+    for (var i = 0; i <= howMany; i++){
+        cheeseArr.push(possCheeses[Math.floor(Math.random() * possCheeses.length)])
+} pizza.cheeses = cheeseArr
+} else {
+    pizza.cheeses= cheese
+}
+
+if(typeof topping == 'undefined'){
+    var howManyToppings = Math.floor(Math.random() * possToppings.length)
+    var toppingsArr = []
+    for (var i = 0 ; i<= howManyToppings; i++){
+
+        toppingsArr.push(possToppings[Math.floor(Math.random() * possToppings.length)])
+    } pizza.toppings = toppingsArr
+}
+    pizza.toppings= toppingsArr
+
+return pizza
+}
+
+pizza1 = pizzaOven("deep dish", "traditional", ["mozzarella"],["pepperoni", "sausage"])
+console.log(pizza1)
+
+pizza2 = pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"])
+console.log(pizza2)
+
+pizzaRandom = pizzaOven()
+console.log(pizzaRandom)
